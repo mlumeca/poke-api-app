@@ -1,25 +1,18 @@
-.pokemon-card {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    padding: 10px;
-    /* Añadir padding para que el hover se vea mejor */
-    transition: background-color 0.3s, transform 0.3s;
-    /* Transición suave para el color y la transformación */
+.berry-card {
+    width: 450px;
 }
 
-.pokemon-sprite {
-    width: 180px;
-    height: 180px;
+.berry-sprite {
+    width: 100px;
+    height: 100px;
 }
 
-.pokemon-name {
-    background: #F0EFEE;
+.berry-name {
+    background-image: linear-gradient(rgb(248, 248, 248) 47%, rgba(227, 227, 227) 48%, rgba(213, 213, 213) 53%);
     border-radius: 20px;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
-    line-height: 42px;
     text-align: center;
     color: black;
     padding: 20px;
@@ -31,15 +24,12 @@
     font-size: 60px;
 }
 
-.tipos {
-    margin-left: 3%;
-}
 
-.pokemon-card:hover {
+.berry-card:hover {
     transform: translateY(-5px);
 }
 
-.tipos {
+.sabor {
     margin-left: 3%;
 }
 
