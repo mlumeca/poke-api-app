@@ -2,3 +2,12 @@ footer {
     background-color: #F1DCEC !important;
     height: 70px;
 }
+
+@font-face {
+    font-family: "kodchasan";
+    src: url(/asset/fonts/Kodchasan/Kodchasan-SemiBold.ttf);
+}
+
+*{
+    font-family: 'Kodchasan' !important;
+}

@@ -8,10 +8,17 @@ nav {
     width: 300px;
     height: 50px;
     box-shadow: 5px 5px 2.5px rgb(94, 93, 93);
-
 }
 
 #seleccionado {
     box-shadow: 5px 5px 2.5px rgb(255, 255, 255);
 }
 
+@font-face {
+    font-family: "kodchasan";
+    src: url(/asset/fonts/Kodchasan/Kodchasan-SemiBold.ttf);
+}
+
+*{
+    font-family: 'Kodchasan' !important;
+}
