@@ -11,7 +11,7 @@ export class BerryListComponent {
 
   berryList: Berry[] = [];
 
-  constructor(private berryServices: BerryService) {}
+  constructor(private berryServices: BerryService) { }
 
   ngOnInit(): void {
     this.berryServices.getBeeryList().subscribe((resp) => {

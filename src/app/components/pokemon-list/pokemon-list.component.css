@@ -38,6 +38,7 @@
 .pokemon-card:hover {
     transform: translateY(-5px);
 }
+
 .tipos {
     margin-left: 3%;
 }
@@ -74,6 +75,6 @@ li>a.dropdown-item {
     src: url(/asset/fonts/Kodchasan/Kodchasan-SemiBold.ttf);
 }
 
-*{
+* {
     font-family: 'Kodchasan' !important;
 }
