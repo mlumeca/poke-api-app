@@ -10,6 +10,7 @@ import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-deta
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { provideHttpClient } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MoveListComponent } from './components/move-list/move-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     NavComponent,
     FooterComponent,
     PokemonListComponent,
-    PokemonDetailComponent
+    PokemonDetailComponent,
+    MoveListComponent
   ],
   imports: [
     BrowserModule,
