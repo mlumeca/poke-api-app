@@ -1,0 +1,79 @@
+.pokemon-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    /* Añadir padding para que el hover se vea mejor */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Transición suave para el color y la transformación */
+}
+
+.pokemon-sprite {
+    width: 180px;
+    height: 180px;
+}
+
+.pokemon-name {
+    background: #F0EFEE;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    text-transform: capitalize;
+
+}
+
+#pokedex {
+    font-size: 60px;
+}
+
+.tipos {
+    margin-left: 3%;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-5px);
+}
+.tipos {
+    margin-left: 3%;
+}
+
+.btn.dropdown-toggle {
+    background-color: #F0EFEE;
+    border-radius: 20px;
+
+
+}
+
+ul.dropdown-menu {
+    background-color: #F0EFEE;
+    border-radius: 20px;
+    width: 120%;
+
+}
+
+
+li>a.dropdown-item {
+    background-color: #95dbba;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.buscar {
+    margin-right: 3%;
+}
+
+@font-face {
+    font-family: "kodchasan";
+    src: url(/asset/fonts/Kodchasan/Kodchasan-SemiBold.ttf);
+}
+
+*{
+    font-family: 'Kodchasan' !important;
+}

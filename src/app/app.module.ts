@@ -10,6 +10,8 @@ import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-deta
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { provideHttpClient } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { BerryListComponent } from './components/berry-list/berry-list.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     NavComponent,
     FooterComponent,
     PokemonListComponent,
-    PokemonDetailComponent
+    PokemonDetailComponent,
+    BerryListComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
