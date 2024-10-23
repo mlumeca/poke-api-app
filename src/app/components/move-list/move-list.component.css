@@ -1,0 +1,66 @@
+#moves {
+    font-size: 60px;
+}
+
+.tipos {
+    margin-left: 3%;
+}
+
+.btn.dropdown-toggle {
+    background-color: #F0EFEE;
+    border-radius: 20px;
+
+
+}
+
+ul.dropdown-menu {
+    background-color: #F0EFEE;
+    border-radius: 20px;
+    width: 120%;
+
+}
+
+
+li>a.dropdown-item {
+    background-color: #95dbba;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.buscar {
+    margin-right: 3%;
+}
+
+@font-face {
+    font-family: "kodchasan";
+    src: url(/asset/fonts/Kodchasan/Kodchasan-SemiBold.ttf);
+}
+
+*{
+    font-family: 'Kodchasan' !important;
+}
+
+.move-card {
+    background-image: linear-gradient(rgb(248, 248, 248) 47%, rgba(227, 227, 227) 48%, rgba(213, 213, 213) 53%);
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    text-transform: capitalize;
+    width: 450px;
+    height: 150px;
+}
+
+.move-sprite {
+    width: 100px;
+    height: 100px;
+}
+
+.move-card:hover {
+    transform: translateY(-5px);
+}

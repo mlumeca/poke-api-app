@@ -12,6 +12,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BerryListComponent } from './components/berry-list/berry-list.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { MoveListComponent } from './components/move-list/move-list.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.co
     FooterComponent,
     PokemonListComponent,
     PokemonDetailComponent,
+    MoveListComponent,
     BerryListComponent,
     PageNotFoundComponent
   ],
