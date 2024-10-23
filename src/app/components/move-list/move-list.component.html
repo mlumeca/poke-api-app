@@ -7,11 +7,11 @@
         </button>
 
         <ul class="dropdown-menu">
-          <ul class="row list-unstyled ms-4 me-4 mt-2" id="tipoPoke"></ul>
+          <ul class="row list-unstyled ms-4 me-4 mt-2" id="tipoAtaque"></ul>
         </ul>
       </div>
 
-      <h1 id="pokedex" class="text-center mt-5">Ataques</h1>
+      <h1 id="moves" class="text-center mt-5">Ataques</h1>
 
       <form class="d-flex buscar">
         <input class="form-control h-25" type="Buscar" placeholder="Buscar" aria-label="Buscar">
@@ -19,19 +19,25 @@
       </form>
     </div>
     <div class="container-fluid">
-      <div class="row" id="listaPokemon">
+      <div class="row" id="listaAtaque">
         @for (item of moveList; track item.url.split("/")[6]) {
-          <div class="d-flex justify-content-around col custom-col mt-5">
-            <div class="move-card text-center">
+          <div class="col-4 mt-5">
+            <div class=" d-flex justify-content-around">
               <a class="text-decoration-none" href="#">
-                <img class="move-sprite" [src]="'https://www.serebii.net/itemdex/sprites/sv/tm001.png'">
-                <div class="pokemon-name hover-${tipo}">
-                  <p class="mt-3">{{item.name}}</p>
+                <div class="move-name d-flex move-card mb-5 me-3 ms-3">
+                  <div class="col-2">
+                    <img class="move-sprite"
+                      [src]="'https://www.serebii.net/itemdex/sprites/sv/tm001.png'">
+                  </div>
+                  <div class="align-items-center col-10">
+                    <p class="mt-3">{{item.name}}</p>
+    
+                  </div>
                 </div>
               </a>
             </div>
           </div>
-        }
+          }
       </div>
     </div>
 </main>
