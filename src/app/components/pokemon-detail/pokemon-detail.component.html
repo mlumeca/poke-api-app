@@ -1,1 +1,55 @@
-<p>pokemon-detail works!</p>
+<div class="container-fluid">
+    <div class="row" id="detallePokemon">
+        <div class="d-flex justify-content-around mt-5 col-12 text-capitalize"> 
+            <button id="botonAnterior" class="btn d-flex mt-3 rounded-5">
+                <h3 class="align-content-center ms-2 mt-2 me-2"><i class="bi bi-caret-left-fill me-2"></i>Anterior pokémon</h3>
+            </button>
+
+            <div>
+                <h1>{{pokemon!.name}}</h1>
+            </div>
+
+            <button id="botonSiguiente" class="btn d-flex mt-3 rounded-5">
+                <h3 class="align-content-center me-2 ms-2 mt-2">Siguiente pokémon<i class="bi bi-caret-right-fill ms-2"></i></h3>
+            </button>
+        </div>
+
+        <div class="d-flex mt-5 col-12">
+            <div class="col-6 text-center">
+                <img class="pokemon-sprite" alt="{{pokemon!.name}}" [src]="'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/' + pokemonId!.padStart(3, '0') + '.png'">
+            </div>
+
+            <div class="col-6">
+                <div id="tarjeta-detalle" class="rounded-5 mb-4">
+                    <div class="d-flex">
+                        <p class="tamayo-letra ms-4 mt-2">Habilidad: </p>
+                        <p class="tamayo-letra ms-4 mt-2" *ngFor="let ability of pokemon!.abilities"> {{ ability.ability.name }} </p>
+                    </div>
+                    <div class="d-flex">
+                        <p class="tamayo-letra ms-4 mt-4">Peso: {{pokemon!.weight}} kg</p>
+                        <p class="tamayo-letra ms-5 mt-4">Altura: {{pokemon!.height}} m</p>
+                        <p class="tamayo-letra ms-5 mt-4">Exp base: {{pokemon!.base_experience}}</p>
+                    </div>
+                    <div class="d-flex">
+                         <p class="tamayo-letra ms-4 mt-4">Tipo: </p> 
+                         <p class="tamayo-letra ms-4 mt-4" *ngFor="let types of pokemon!.types"> {{ types.type.name }} </p>
+                        <p class="tamayo-letra ms-5 mt-4">
+                            Sexo:
+                            <img src="/asset/img/macho.png" width="25" alt="macho">
+                            <img src="/asset/img/hembra.png" width="25" alt="hembra">
+                        </p>
+                    </div>
+                </div>
+                <div id="estadisticas" class="rounded-5">
+                    <h4 class="pt-3 text-center">Estadísticas</h4>
+                    <p class="ms-4">HP: {{pokemon!.stats[0].base_stat}}</p>
+                    <p class="ms-4">Ataque : {{pokemon!.stats[1].base_stat}}</p>
+                    <p class="ms-4">Defensa: {{pokemon!.stats[2].base_stat}}</p>
+                    <p class="ms-4">Ataque especial: {{pokemon!.stats[3].base_stat}}</p>
+                    <p class="ms-4">Defensa especial: {{pokemon!.stats[4].base_stat}}</p>
+                    <p class="ms-4">Velocidad: {{pokemon!.stats[5].base_stat}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

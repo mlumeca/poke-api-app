@@ -21,14 +21,12 @@
     <div class="container-fluid">
       <div class="row" id="listaPokemon">
         @for (item of pokemonList; track item.url.split("/")[6]) {
-          <div class="d-flex justify-content-around col custom-col mt-5">
+          <div class="d-flex justify-content-around col custom-col mt-5" [routerLink]="['/pokemon-detail', item.url.split('/')[6]]">
             <div class="pokemon-card text-center">
-              <a class="text-decoration-none" href="#">
                 <img class="pokemon-sprite" [src]="'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/' + item.url.split('/')[6].padStart(3, '0') + '.png'">
                 <div class="pokemon-name hover-${tipo}">
                   <p class="mt-3">{{item.name}}</p>
                 </div>
-              </a>
             </div>
           </div>
         }
