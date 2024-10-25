@@ -5,12 +5,15 @@ import { PokemonListComponent } from './components/pokemon-list/pokemon-list.com
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { MoveListComponent } from './components/move-list/move-list.component';
 import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
+import { MoveDetailComponent } from './components/move-detail/move-detail.component';
 import { BerryDetailComponent } from './components/berry-detail/berry-detail.component';
+
 
 const routes: Routes = [
   {path: 'berry', component: BerryListComponent},
   {path: 'pokemon', component: PokemonListComponent},
   { path: 'pokemon-detail/:id', component: PokemonDetailComponent },
+  { path: 'move-detail/:id', component: MoveDetailComponent },
   {path: 'berry-detail/:id', component: BerryDetailComponent},
   {path: 'move', component: MoveListComponent},
   {path: '', redirectTo: '/pokemon', pathMatch: 'full'},
