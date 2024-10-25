@@ -49,23 +49,6 @@ body {
     width: 70%;
 
 }
-
-.planta {
-    background-color: #51BC5D !important;
-    height: 40px;
-    width: 140px;
-    margin-top: 22px;
-    margin-left: 20px;
-}
-
-.veneno {
-    background-color: #A96AC7 !important;
-    height: 40px;
-    width: 140px;
-    margin-top: 22px;
-    margin-left: 20px;
-}
-
 .tamayo-letra {
     font-size: 20px;
 }
