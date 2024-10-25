@@ -1,0 +1,50 @@
+
+body {
+    min-height: 100vh;
+}
+
+#seleccionado {
+    box-shadow: 5px 5px 2.5px rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: "kodchasan";
+    src: url(../../../../public/asset/fonts/Kodchasan/Kodchasan-SemiBold.ttf);
+}
+
+* {
+    font-family: 'Kodchasan';
+}
+
+
+
+
+#tarjeta-detalle {
+    height: 200px;
+    background-color: #F0EFEE !important;
+    box-shadow: 5px 5px 2.5px rgb(187, 185, 185);
+    width: 70%;
+}
+
+#estadisticas {
+    height: 280px;
+    background-color: #F0EFEE !important;
+    box-shadow: 5px 5px 2.5px rgb(187, 185, 185);
+    width: 70%;
+
+}
+.tamayo-letra {
+    font-size: 20px;
+}
+
+#seleccionado {
+    box-shadow: 5px 5px 2.5px rgb(255, 255, 255);
+}
+
+.berry-sprite {
+    width: 30%;
+}
+
+.damage-class {
+    height: 20px;
+}
