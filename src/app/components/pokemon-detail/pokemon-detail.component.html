@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row" id="detallePokemon">
         <div class="d-flex justify-content-around mt-5 col-12 text-capitalize"> 
-            <button id="botonAnterior" class="btn d-flex mt-3 rounded-5">
+            <button id="botonAnterior" class="btn d-flex mt-3 rounded-5" [routerLink]="['/pokemon-detail', pokemon!.id-1]">
                 <h3 class="align-content-center ms-2 mt-2 me-2"><i class="bi bi-caret-left-fill me-2"></i>Anterior pokémon</h3>
             </button>
 
@@ -9,7 +9,7 @@
                 <h1>{{pokemon!.name}}</h1>
             </div>
 
-            <button id="botonSiguiente" class="btn d-flex mt-3 rounded-5">
+            <button id="botonSiguiente" class="btn d-flex mt-3 rounded-5" [routerLink]="['/pokemon-detail', pokemon!.id+1]">
                 <h3 class="align-content-center me-2 ms-2 mt-2">Siguiente pokémon<i class="bi bi-caret-right-fill ms-2"></i></h3>
             </button>
         </div>
