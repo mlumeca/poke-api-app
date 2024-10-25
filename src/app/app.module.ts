@@ -13,6 +13,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { BerryListComponent } from './components/berry-list/berry-list.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { MoveListComponent } from './components/move-list/move-list.component';
+import { BerryDetailComponent } from './components/berry-detail/berry-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MoveListComponent } from './components/move-list/move-list.component';
     PokemonDetailComponent,
     MoveListComponent,
     BerryListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    BerryDetailComponent
   ],
   imports: [
     BrowserModule,
