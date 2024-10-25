@@ -20,9 +20,7 @@ export class MoveDetailComponent implements OnInit{
   ) { }
   
   ngOnInit(): void {
-    debugger;
     this.moveId = this.route.snapshot.paramMap.get('id');
-    debugger;
     
     this.moveService.getOneMove(parseInt(this.moveId!)).subscribe((response) => {
       this.move = response;

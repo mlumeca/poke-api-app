@@ -6,7 +6,7 @@
             </button>
 
             <div>
-                <h1>{{move!.name}}</h1>
+                <h1>{{move!.names[5].name}}</h1>
             </div>
 
             <button id="botonSiguiente" class="btn d-flex mt-3 rounded-5">
@@ -16,22 +16,35 @@
 
         <div class="d-flex mt-5 col-12">
             <div class="col-6 text-center">
-                <img class="move-sprite" alt="{{move!.name}}" [src]="'https://static.wikia.nocookie.net/international-pokedex/images/5/59/HM_%28'+ move!.type.name + '-type%29.png/revision/latest?cb=20200126170349'">
+                <img class="move-sprite" alt="{{move!.name}}" src="/asset/img/{{move!.type.name}}.png">
             </div>
 
             <div class="col-6">
                 <div id="tarjeta-detalle" class="rounded-5 mb-4">
                     <div class="d-flex">
                         <p class="tamayo-letra ms-4 mt-2">Potencia: </p>
-                        <p class="tamayo-letra ms-4 mt-2"> {{ move!.accuracy }} </p>
+                        @if (move!.power == null) {
+                            <p class="tamayo-letra ms-4 mt-2"> -- </p>
+                        }
+                        @else {
+                            <p class="tamayo-letra ms-4 mt-2"> {{ move!.power}} </p>
+                        }
                     </div>
                     <div class="d-flex">
                         <p class="tamayo-letra ms-4 mt-2">Precisión: </p>
-                        <p class="tamayo-letra ms-4 mt-2"> {{ move!.accuracy }} </p>
+                        @if (move!.accuracy == null) {
+                            <p class="tamayo-letra ms-4 mt-2"> -- </p>
+                        }
+                        @else {
+                            <p class="tamayo-letra ms-4 mt-2"> {{ move!.accuracy}} </p>
+                        }
                     </div>
                     <div class="d-flex">
                         <p class="tamayo-letra ms-4 mt-2">PP: </p>
-                        <p class="tamayo-letra ms-4 mt-2"> {{ move!.accuracy }} </p>
+                        <p class="tamayo-letra ms-4 mt-2"> {{ move!.pp }} </p>
+                    </div>
+                    <div class="damage-class start-50 mt-5">
+                        <img src="/asset/img/{{move!.damage_class.name}}.png" alt="damage-class">
                     </div>
                 </div>
             </div>

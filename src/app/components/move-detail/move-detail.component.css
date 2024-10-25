@@ -56,3 +56,11 @@ body {
 #seleccionado {
     box-shadow: 5px 5px 2.5px rgb(255, 255, 255);
 }
+
+.move-sprite {
+    width: 30%;
+}
+
+.damage-class {
+    height: 20px;
+}
