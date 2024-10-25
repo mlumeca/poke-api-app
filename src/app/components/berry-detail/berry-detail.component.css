@@ -12,10 +12,10 @@ body {
     src: url(../../../../public/asset/fonts/Kodchasan/Kodchasan-SemiBold.ttf);
 }
 
-* {
+
+*,  h1{
     font-family: 'Kodchasan';
 }
-
 
 
 

@@ -26,7 +26,7 @@ import { BerryDetailComponent } from './components/berry-detail/berry-detail.com
     MoveListComponent,
     BerryListComponent,
     PageNotFoundComponent,
-    MoveDetailComponent
+    MoveDetailComponent,
     BerryDetailComponent
   ],
   imports: [

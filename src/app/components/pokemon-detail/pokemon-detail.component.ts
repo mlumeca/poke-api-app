@@ -8,6 +8,8 @@ import { PokemonService } from '../../services/pokemon.service';
   templateUrl: './pokemon-detail.component.html',
   styleUrl: './pokemon-detail.component.css'
 })
+
+
 export class PokemonDetailComponent implements OnInit {
   pokemonId: string | null = '';
   pokemon: PokemonDetailResponse | undefined;
@@ -25,5 +27,6 @@ export class PokemonDetailComponent implements OnInit {
     this.pokemonService.getOnePokemon(parseInt(this.pokemonId!)).subscribe((response) => {
       this.pokemon = response;
     });
+    
   }
 }
