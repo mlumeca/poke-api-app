@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="d-flex justify-content-around mt-5 col-12 text-capitalize"> 
+           
+
+            <div>
+                <h1>{{berry!.name}}</h1>
+            </div>
+
+        </div>
+
+        <div class="d-flex mt-5 col-12">
+            <div class="col-6 text-center">
+                <img class="berry-sprite" alt="" [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/' + berry!.name + '-berry.png'">
+            </div>
+
+            <div class="col-6">
+                <div id="tarjeta-detalle" class="rounded-5 mb-4">
+                    <div class="d-flex">
+                        <p class="tamayo-letra ms-4 mt-2">Sabor: </p>
+                       
+                        <p class="tamayo-letra ms-4 mt-2" *ngFor="let flavor of berry!.flavors"> @if (flavor.potency > 1) {
+                            {{ flavor.flavor.name}}
+                        }</p>
+                    </div>
+                    <div class="d-flex">
+                        <p class="tamayo-letra ms-4 mt-2">Firmeza: {{berry!.firmness.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

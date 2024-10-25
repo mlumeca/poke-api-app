@@ -21,8 +21,8 @@
       @for (item of berryList; track item.url.split("/")[6]) {
       <div class="col-4 mt-5">
         <div class=" d-flex justify-content-around">
-          <a class="text-decoration-none" href="#">
-            <div class="berry-name d-flex berry-card mb-5 me-3 ms-3">
+        
+            <div class="berry-name d-flex berry-card mb-5 me-3 ms-3" [routerLink]="['/berry-detail', item.url.split('/')[6]]">
               <div class="col-2">
                 <img class="berry-sprite"
                   [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/' + item.name + '-berry.png'">
@@ -32,7 +32,7 @@
 
               </div>
             </div>
-          </a>
+          
         </div>
       </div>
       }

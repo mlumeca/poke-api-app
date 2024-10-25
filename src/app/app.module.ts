@@ -14,6 +14,7 @@ import { BerryListComponent } from './components/berry-list/berry-list.component
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { MoveListComponent } from './components/move-list/move-list.component';
 import { MoveDetailComponent } from './components/move-detail/move-detail.component';
+import { BerryDetailComponent } from './components/berry-detail/berry-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MoveDetailComponent } from './components/move-detail/move-detail.compon
     BerryListComponent,
     PageNotFoundComponent,
     MoveDetailComponent
+    BerryDetailComponent
   ],
   imports: [
     BrowserModule,
